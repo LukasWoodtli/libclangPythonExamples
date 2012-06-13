@@ -10,8 +10,15 @@
  """
 
 
+import sys
+import os
+
+path_to_this_file = os.path.realpath(__file__)
+path_to_this_directory = os.path.split(path_to_this_file)[0]
+sys.path.append(path_to_this_directory + "/clang/")
 import findTyperefs
- 
+
+
 findTyperefs.main(['room.cpp', 'Person'])
 
 
