@@ -13,7 +13,7 @@ private:
 };
 
 template <class T, int N>
-class Bag<T, N> {
+class Bag {
 };
 
 int main()

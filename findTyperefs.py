@@ -17,7 +17,7 @@ def find_typerefs(node, typename):
     for c in node.get_children():
         find_typerefs(c, typename)
 
-def main(argv):        
+def main(argv):
   index = clang.cindex.Index.create()
   tu = index.parse(argv[0])
   print 'Translation unit:', tu.spelling
